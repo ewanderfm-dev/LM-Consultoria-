@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentário de Trabalho — Ewander Ferreira de Macedo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #0f1732;
+            --navy-light: #1e2d50;
+            --gold: #ffd700;
+            --white: #f5f3f0;
+            --gray: #e8e6e4;
+            --text: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background-color: var(--white);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* HERO SECTION */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .hero-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: var(--gold);
+            font-size: 24px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* SEÇÕES PRINCIPAIS */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        .section {
+            min-height: 80vh;
+            padding: 100px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section:nth-child(odd) {
+            background-color: white;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f9f7f4;
+        }
+
+        .section-content {
+            max-width: 900px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .section-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            opacity: 0.3;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .section h2 {
+            font-size: 3rem;
+            color: var(--navy);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            color: var(--text);
+            margin-bottom: 20px;
+            line-height: 1.9;
+        }
+
+        .section-highlight {
+            background-color: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid var(--gold);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .section-highlight p {
+            margin: 0;
+            font-style: italic;
+            color: var(--navy);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* COMPETÊNCIAS */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .competency-block {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            border-top: 4px solid var(--gold);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .competency-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .competency-block h3 {
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .competency-icon {
+            width: 30px;
+            height: 30px;
+            background-color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--navy);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .competency-block ul {
+            list-style: none;
+        }
+
+        .competency-block li {
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: var(--text);
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .competency-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* CTA SECTION */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: white;
+            padding: 100px 60px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 40px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--gold);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--gold);
+            color: var(--navy);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* ANIMAÇÕES */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(10px);
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* RESPONSIVO */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 60px 30px;
+                min-height: auto;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .section-number {
+                font-size: 3rem;
+            }
+
+            .competencies-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .cta-section {
+                padding: 60px 30px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════ */
+        /* INTERSECTION OBSERVER ANIMATION */
+        /* ═══════════════════════════════════════════════════════════════ */
+
+        .section-content.visible,
+        .cta-content.visible {
+            animation: fadeInUp 0.8s ease-out forwards !important;
+        }
+
+        .competency-block.visible {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- HERO -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">Documentário de Trabalho</div>
+            <h1>Ewander Ferreira de Macedo</h1>
+            <p class="hero-text">Como estruturo decisões em contextos complexos e alavanco crescimento sustentável em organizações reais.</p>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SEÇÃO 1: QUEM SOU -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <section class="section">
+        <div class="section-content">
+            <div class="section-number">01</div>
+            <h2>Quem Sou</h2>
+            
+            <p>Trabalho com executivos que descobriram que o crescimento pessoal e organizacional estão relacionados a um estilo de vida e trabalho assertivo e intencional, balizado por premissas abrangentes, confirmadas por resultados crescentes e sustentáveis.</p>
+
+            <div class="section-highlight">
+                <p>"Este documentário é minha forma de mostrar como funciono, o que penso e como estruturo decisões em contextos complexos."</p>
+            </div>
+
+            <p>Minha trajetória é real: trabalho em contextos de transformação, regulação e escala. Isso me ofereceu a oportunidade de desenvolver uma visão multidimensional de negócios e organizações.</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SEÇÃO 2: O DESAFIO -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <section class="section">
+        <div class="section-content">
+            <div class="section-number">02</div>
+            <h2>O Desafio: Líderes Sob Pressão</h2>
+            
+            <p>Líderes são pressionados a tomar decisão. Lidam com prazos curtos, muitas pressões. O primeiro impulso é tentar sair da pressão o mais rápido possível.</p>
+
+            <div class="section-highlight">
+                <p>"Mas aí enfatizo que a complexidade não é o problema. Ela é o trabalho."</p>
+            </div>
+
+            <p>Porque quando você para de lutar contra ela e começa a assimilá-la, algo muda fundamentalmente. De repente você não está tentando escapar—está tentando entender onde está a oportunidade de crescimento escondido naquilo que parecia só caótico.</p>
+
+            <p style="margin-top: 30px; font-style: italic; color: var(--navy);">Se você está neste ponto agora—naquele lugar onde tudo parece muito difícil, muito complexo, muita pressão—acredite: você não está perdido, você está sendo formado.</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SEÇÃO 3: COMPETÊNCIAS -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <section class="section">
+        <div class="section-content">
+            <div class="section-number">03</div>
+            <h2>Áreas de Expertise</h2>
+            
+            <p>A experiência compartilhada com líderes e organizações me estimulou a desenvolver continuamente habilidades que lidem com temas que compõem o environment corporativo:</p>
+
+            <div class="competencies-grid">
+                <!-- Bloco 1: Operacional -->
+                <div class="competency-block">
+                    <h3>
+                        <div class="competency-icon">⚙️</div>
+                        Estrutura Operacional
+                    </h3>
+                    <ul>
+                        <li>Redesenho organizacional</li>
+                        <li>Estrutura de decisão</li>
+                        <li>Processos escaláveis</li>
+                        <li>Modelo de negócio</li>
+                        <li>Expansão regulada</li>
+                        <li>Diligência operacional</li>
+                    </ul>
+                </div>
+
+                <!-- Bloco 2: Financeiro -->
+                <div class="competency-block">
+                    <h3>
+                        <div class="competency-icon">📊</div>
+                        Análise Financeira
+                    </h3>
+                    <ul>
+                        <li>Análise financeira estratégica</li>
+                        <li>Temas regulatórios (Reforma tributária)</li>
+                        <li>Simulação de cenários</li>
+                        <li>Risco financeiro</li>
+                        <li>Conformidade operacional</li>
+                        <li>Modelagem financeira</li>
+                    </ul>
+                </div>
+
+                <!-- Bloco 3: Pessoas -->
+                <div class="competency-block">
+                    <h3>
+                        <div class="competency-icon">👥</div>
+                        Gestão de Pessoas
+                    </h3>
+                    <ul>
+                        <li>Gestão de equipes</li>
+                        <li>Comunicação estruturada</li>
+                        <li>Propósito organizacional</li>
+                        <li>Coaching executivo</li>
+                        <li>Cultura de decisão</li>
+                        <li>Desenvolvimento de liderança</li>
+                    </ul>
+                </div>
+
+                <!-- Bloco 4: Estratégia -->
+                <div class="competency-block">
+                    <h3>
+                        <div class="competency-icon">🎯</div>
+                        Estratégia & Facilitação
+                    </h3>
+                    <ul>
+                        <li>Propostas estruturadas</li>
+                        <li>Comunicação multidimensional</li>
+                        <li>Storytelling de dados</li>
+                        <li>Conteúdo para liderança</li>
+                        <li>Metodologia ágil adaptada</li>
+                        <li>Design thinking & Facilitação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SEÇÃO 4: METODOLOGIA -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <section class="section">
+        <div class="section-content">
+            <div class="section-number">04</div>
+            <h2>Gerir Mudanças & Alavancar Estratégico</h2>
+            
+            <p>Passa por entender a situação real, a partir de dados. É preciso ir além da opinião.</p>
+
+            <div class="section-highlight">
+                <p>"A análise profunda da realidade da organização oferece uma correta compreensão das tensões escondidas (financeira, regulatória, organizacional, pessoal)."</p>
+            </div>
+
+            <p>E busca de soluções que muitas vezes já estão no contexto da empresa. Meu trabalho é estruturar essas soluções e alinhar pessoas, processos e propósito para crescimento sustentável.</p>
+
+            <p style="margin-top: 30px;">Quando você consegue dançar com a complexidade em vez de fugir dela, as oportunidades se tornam visíveis.</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- CTA FINAL -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Vamos Conversar?</h2>
+            <p>Se você está em um ponto onde o crescimento exige repensar tudo, vamos estruturar isso juntos.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5524999999999" class="btn btn-primary">WhatsApp</a>
+                <a href="https://linkedin.com/in/ewander" class="btn btn-secondary">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SCRIPTS -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+
+    <script>
+        // Intersection Observer para animações de scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos os elementos que devem animar
+        document.querySelectorAll('.section-content, .cta-content, .competency-block').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll para o scroll indicator
+        document.querySelector('.scroll-indicator')?.addEventListener('click', () => {
+            document.querySelector('.section')?.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
