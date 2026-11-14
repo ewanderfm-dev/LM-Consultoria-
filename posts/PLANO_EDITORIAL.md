@@ -4,7 +4,7 @@ Postagem diária no LinkedIn, com uma arte de 1080x1350 e uma legenda. Entrega �
 
 ## Fontes de conteúdo
 - `documentario_ewander.html`: posicionamento, voz e áreas de expertise do Ewander / LM Consultoria.
-- **`posts/CONTEXTO_MENTORIA_FGV.md` (fonte principal):** as 17 aulas da mentoria de carreira, as ferramentas e o banco de conceitos das 13 apostilas FGV, com páginas. Cada pílula deve partir de um conceito desse banco, aplicado à prática do líder ou profissional, e citar a apostila FGV como fonte na arte e na legenda.
+- **`posts/CONTEXTO_MENTORIA_FGV.md` (FONTE OBRIGATÓRIA EM TODOS OS DIAS):** as 17 aulas da mentoria de carreira, as ferramentas e o banco de conceitos das 13 apostilas FGV, com páginas. Cada pílula deve partir de um conceito desse banco, aplicado à prática do líder ou profissional, e citar a apostila FGV como fonte na arte e na legenda.
 
 ## Voz
 Consultor sênior falando com executivos e líderes: direto, reflexivo e prático. Frases curtas. Sem jargão vazio. Fecha sempre com uma pergunta para gerar conversa. 3 a 5 hashtags.
