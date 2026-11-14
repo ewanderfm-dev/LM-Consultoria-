@@ -1,0 +1,12 @@
+{
+  "tag": "Pílula de Liderança",
+  "num": "#01",
+  "title": "A complexidade não é o problema. <em>Ela é o trabalho.</em>",
+  "lead": "Sob pressão, o primeiro impulso é sair dela o mais rápido possível. Líderes que crescem fazem o contrário: decidem com método.",
+  "items": [
+    { "h": "Dados antes de opinião", "p": "Comece pela situação real, não pela percepção de quem fala mais alto." },
+    { "h": "Mapeie as tensões escondidas", "p": "Financeira, regulatória, organizacional e pessoal: onde está o atrito de verdade?" },
+    { "h": "Procure dentro de casa", "p": "Muitas soluções já existem no contexto da empresa. Falta estruturá‑las." }
+  ],
+  "cta": "Salve para a sua próxima decisão difícil"
+}
