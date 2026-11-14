@@ -1,0 +1,12 @@
+{
+  "tag": "Pílula de Carreira",
+  "num": "#02",
+  "title": "Sua carreira não é mais uma escada. <em>É um plano.</em>",
+  "lead": "Com estruturas mais enxutas e a IA assumindo tarefas, crescer deixou de ser só subir de cargo. Três passos para conduzir a própria carreira:",
+  "items": [
+    { "h": "Pense na horizontal", "p": "Ampliar escopo, projetos e competências também é crescer." },
+    { "h": "Invista no que é humano", "p": "Liderança, comunicação e decisão ganham peso com a automação." },
+    { "h": "Transforme intenção em PDI", "p": "Propósito, metas SMART, ações práticas e feedback contínuo." }
+  ],
+  "cta": "Fonte: apostilas FGV – Cargos e Carreiras · Gestão de Desempenho"
+}

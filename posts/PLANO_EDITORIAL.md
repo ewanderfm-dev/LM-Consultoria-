@@ -4,7 +4,7 @@ Postagem diária no LinkedIn, com uma arte de 1080x1350 e uma legenda. Entrega �
 
 ## Fontes de conteúdo
 - `documentario_ewander.html`: posicionamento, voz e áreas de expertise do Ewander / LM Consultoria.
-- Material da mentoria de carreira e da FGV: **ainda não está no repositório**. Quando for adicionado (por exemplo, em `fontes/`), ele passa a ser a fonte principal das pílulas.
+- **`posts/CONTEXTO_MENTORIA_FGV.md` (fonte principal):** as 17 aulas da mentoria de carreira, as ferramentas e o banco de conceitos das 13 apostilas FGV, com páginas. Cada pílula deve partir de um conceito desse banco, aplicado à prática do líder ou profissional, e citar a apostila FGV como fonte na arte e na legenda.
 
 ## Voz
 Consultor sênior falando com executivos e líderes: direto, reflexivo e prático. Frases curtas. Sem jargão vazio. Fecha sempre com uma pergunta para gerar conversa. 3 a 5 hashtags.
@@ -32,3 +32,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | # | Data | Pilar | Tema |
 |---|------|-------|------|
 | 01 | 2026-11-14 | Liderança e decisão | A complexidade não é o problema, ela é o trabalho: 3 movimentos para decidir sob pressão |
+| 02 | 2026-11-14 | Carreira (mentoria + FGV cc/gd) | Carreira não é escada, é plano: carreira horizontal, competências humanas e PDI |
+
+Próximas sugestões do banco: metas SMART (gd p33–34), liderança situacional E1–E4 (pl p46–47), avaliação 360° (gd p44), OKR (pj p40), feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).
