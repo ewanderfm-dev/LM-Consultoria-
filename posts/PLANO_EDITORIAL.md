@@ -33,5 +33,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 |---|------|-------|------|
 | 01 | 2026-11-14 | Liderança e decisão | A complexidade não é o problema, ela é o trabalho: 3 movimentos para decidir sob pressão |
 | 02 | 2026-11-14 | Carreira (mentoria + FGV cc/gd) | Carreira não é escada, é plano: carreira horizontal, competências humanas e PDI |
+| 03 | 2026-11-15 | Estratégia e gestão (FGV gd p33–34) | Meta que não vira número vira opinião: método SMART e metas construídas em conjunto |
 
-Próximas sugestões do banco: metas SMART (gd p33–34), liderança situacional E1–E4 (pl p46–47), avaliação 360° (gd p44), OKR (pj p40), feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).
+Próximas sugestões do banco: liderança situacional E1–E4 (pl p46–47), avaliação 360° (gd p44), OKR (pj p40), feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).

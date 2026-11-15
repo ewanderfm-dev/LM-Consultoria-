@@ -1,0 +1,12 @@
+{
+  "tag": "Pílula de Gestão",
+  "num": "#03",
+  "title": "Meta que não vira número <em>vira opinião.</em>",
+  "lead": "Desde 1954, quando Drucker descreveu o método SMART, a lição é a mesma: meta boa é a que todos sabem dizer se foi atingida.",
+  "items": [
+    { "h": "Específica e mensurável", "p": "Troque “agilizar” por “reduzir o prazo de 5 para 3 dias úteis”." },
+    { "h": "Desafiadora, não impossível", "p": "Meta inatingível não motiva: gera frustração e desânimo na equipe." },
+    { "h": "Relevante e com prazo", "p": "Alinhada à estratégia e com data marcada para ser cobrada." }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Desempenho"
+}
