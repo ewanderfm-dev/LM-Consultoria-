@@ -9,6 +9,8 @@ Postagem diária no LinkedIn, com uma arte de 1080x1350 e uma legenda. Entrega �
 ## Voz
 Consultor sênior falando com executivos e líderes: direto, reflexivo e prático. Frases curtas. Sem jargão vazio. Fecha sempre com uma pergunta para gerar conversa. 3 a 5 hashtags.
 
+**Preferência do Ewander (feedback da #04):** o título da arte deve ser uma frase-chave curta, afirmativa e inspiradora (ex.: "Maior é o que serve"), e não uma construção do tipo "não existe X certo". A liderança é tratada como serviço: ouvir, discernir e servir a equipe. Os conceitos da FGV entram como base, não como protagonista.
+
 ## Pilares (rodízio pela ordem, um por dia)
 1. Liderança e decisão sob pressão
 2. Carreira e desenvolvimento executivo (mentoria de carreira)
