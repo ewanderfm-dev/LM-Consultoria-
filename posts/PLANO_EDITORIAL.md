@@ -22,6 +22,7 @@ Consultor sênior falando com executivos e líderes: direto, reflexivo e prátic
 - `tag`: nome do pilar, por exemplo "Pílula de Carreira"
 - `num`: número sequencial (#01, #02…)
 - `title`: frase de impacto. Use `<em>` no trecho que deve ficar em dourado.
+- `titleSize` (opcional): tamanho do título em px, para frases curtas de destaque (padrão 68; a #04 usa 120)
 - `lead`: 1 a 2 frases
 - `items`: exatamente 3 itens `{h, p}`, com `p` de até cerca de 90 caracteres
 - `cta`: chamada curta
@@ -34,6 +35,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | 01 | 2026-11-14 | Liderança e decisão | A complexidade não é o problema, ela é o trabalho: 3 movimentos para decidir sob pressão |
 | 02 | 2026-11-14 | Carreira (mentoria + FGV cc/gd) | Carreira não é escada, é plano: carreira horizontal, competências humanas e PDI |
 | 03 | 2026-11-15 | Estratégia e gestão (FGV gd p33–34) | Meta que não vira número vira opinião: método SMART e metas construídas em conjunto |
-| 04 | 2026-11-16 | Pessoas e liderança (FGV pl p46–47) | Estilo certo para cada pessoa: liderança situacional E1–E4 |
+| 04 | 2026-11-16 | Pessoas e liderança (FGV pl p46–47, gd p33) | Maior é o que serve: ouvir, discernir e servir (liderança de apoio + situacional) |
 
 Próximas sugestões do banco: avaliação 360° (gd p44), OKR (pj p40), feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).

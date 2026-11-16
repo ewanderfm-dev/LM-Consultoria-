@@ -1,12 +1,22 @@
 {
   "tag": "Pílula de Liderança",
   "num": "#04",
-  "title": "Não existe um estilo de liderança certo. <em>Existe o estilo certo para cada pessoa.</em>",
-  "lead": "Na liderança situacional de Hersey e Blanchard, quem define a sua postura é a maturidade de quem você lidera.",
+  "title": "Maior é<br><em>o que serve.</em>",
+  "lead": "O líder relevante não é o que tem mais poder na sala. É o que investe tempo em ouvir, discernir e servir a sua equipe.",
   "items": [
-    { "h": "Iniciante na tarefa: dirija", "p": "Diga com clareza o que e como fazer, e acompanhe de perto." },
-    { "h": "Motivado, mas inseguro: oriente", "p": "Explique o porquê, escute com atenção e desenvolva junto." },
-    { "h": "Capaz e confiante: apoie e delegue", "p": "Saia da tarefa, cuide da relação e confie na autonomia." }
+    {
+      "h": "Ouvir",
+      "p": "Escuta ativa: acolher opiniões e sugestões antes de decidir."
+    },
+    {
+      "h": "Discernir",
+      "p": "Ler o momento de cada pessoa e ajustar a sua postura a ela."
+    },
+    {
+      "h": "Servir",
+      "p": "Cuidar do bem-estar do time e perguntar: “como posso ajudar?”"
+    }
   ],
-  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança"
+  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança",
+  "titleSize": 120
 }

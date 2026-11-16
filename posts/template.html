@@ -50,6 +50,7 @@
   document.getElementById('tag').textContent = p.tag;
   document.getElementById('num').textContent = p.num;
   document.getElementById('title').innerHTML = p.title;
+  if (p.titleSize) document.getElementById('title').style.fontSize = p.titleSize + 'px';
   document.getElementById('lead').textContent = p.lead;
   document.getElementById('cta').textContent = p.cta;
   document.getElementById('items').innerHTML = p.items.map((it, i) =>

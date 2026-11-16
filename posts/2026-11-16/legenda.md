@@ -1,22 +1,24 @@
-Não existe um estilo de liderança certo. Existe o estilo certo para cada pessoa.
+Maior é o que serve.
 
-Um erro comum em líderes recém-promovidos é tratar a equipe inteira do mesmo jeito. Quem acompanha tudo de perto sufoca os mais experientes. Quem delega tudo deixa os iniciantes sem chão.
+Por muito tempo, associamos liderança a cargo, a poder de decisão e a quem fala por último na reunião.
 
-A apostila de Gestão de Pessoas e Liderança da FGV apresenta a Teoria Situacional, de Hersey e Blanchard. A ideia central é que o líder define as próprias ações a partir do nível de maturidade de cada liderado. Na prática:
+Mas os líderes que realmente fazem diferença na vida de uma equipe raramente são os que mais mandam. São os que mais se colocam à disposição.
 
-1️⃣ Iniciante na tarefa: dirija (E1)
-Muito foco na tarefa. Dê orientações claras sobre o que e como fazer e acompanhe a execução de perto, porque a pessoa ainda não tem preparo suficiente para assumir sozinha.
+O líder relevante investe em três atitudes:
 
-2️⃣ Motivado, mas ainda inseguro: oriente (E2)
-Foco alto na tarefa e no relacionamento. Explique o porquê, abra o diálogo com escuta ativa e considere as opiniões e sugestões da pessoa enquanto ela aprende.
+1️⃣ Ouvir
+Antes de decidir, escuta. A apostila de Gestão de Pessoas e Liderança da FGV descreve isso como escuta ativa e reflexiva: conhecer e considerar as opiniões e sugestões de quem está na linha de frente. Quem se sente ouvido se compromete.
 
-3️⃣ Capaz e confiante: apoie e delegue (E3 e E4)
-Reduza o foco na tarefa. Cuide da relação, compartilhe as decisões e, quando houver maturidade plena, delegue com confiança.
+2️⃣ Discernir
+Cada pessoa vive um momento diferente. Uma precisa de direção clara. Outra precisa de orientação e diálogo. Outra só precisa de confiança e espaço. Discernir é ler essa maturidade e ajustar a própria postura, como propõe a Teoria Situacional de Hersey e Blanchard.
 
-O mesmo liderado pode estar em E1 em uma tarefa nova e em E4 naquilo que domina. Liderar bem é ler a situação antes de escolher a postura.
+3️⃣ Servir
+É a liderança de apoio: o líder se preocupa com o bem-estar do time e tira os obstáculos do caminho. Na prática, isso cabe em uma pergunta simples, que a apostila de Gestão de Desempenho recomenda fazer a cada colaborador: "o que eu posso fazer para ajudar você?"
 
-💬 Pense na sua equipe: em qual estilo você costuma ficar "travado", mesmo quando a situação pede outro?
+Servir não é abrir mão de autoridade. É usar a autoridade a favor das pessoas e, por meio delas, dos resultados.
 
-📚 Fonte: FGV, apostila Gestão de Pessoas e Liderança (Teoria Situacional, p. 46–47).
+💬 Qual dessas três atitudes você mais valoriza no melhor líder que já teve?
 
-#Liderança #GestãoDePessoas #LiderançaSituacional #DesenvolvimentoDeLíderes #LMConsultoria
+📚 Fonte: FGV, apostilas Gestão de Pessoas e Liderança (p. 46–47) e Gestão de Desempenho (p. 33).
+
+#Liderança #LiderançaServidora #GestãoDePessoas #Propósito #LMConsultoria
