@@ -1,0 +1,15 @@
+{
+  "layout": "editorial",
+  "theme": "ivory",
+  "tag": "Pílula de Desenvolvimento",
+  "num": "#05",
+  "title": "Crescer é ter coragem de <em>ser visto por inteiro.</em>",
+  "titleSize": 112,
+  "lead": "A avaliação 360° troca o olhar único do chefe pelo olhar de todos que convivem com o seu trabalho.",
+  "items": [
+    { "h": "Ouça os seus pares", "p": "Quem trabalha ao seu lado enxerga o que o gestor não vê." },
+    { "h": "Escute quem você lidera", "p": "A sua liderança é medida pela experiência da equipe." },
+    { "h": "Pergunte ao cliente", "p": "Interno ou externo, ele sente o resultado do seu trabalho." }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Desempenho"
+}
