@@ -20,6 +20,32 @@ Consultor sênior falando com executivos e líderes: direto, reflexivo e prátic
 6. Estrutura e processos (redesenho organizacional, escala, modelo de negócio)
 7. Facilitação e comunicação (storytelling com dados, design thinking, ágil)
 
+## Identidade visual: cada dia diferente
+Tom sóbrio e corporativo, mas a arte nunca repete o visual do dia anterior. O post.json define:
+- `layout`:
+  - `classic`: faixa de cards com borda
+  - `editorial`: claro, estilo revista, com fios finos
+  - `photo`: imagem no topo e painel embaixo
+  - `quote`: frase central com aspas e 3 colunas
+  - `band`: faixa lateral com `keyword` vertical
+  - `cards`: grade de cartões numerados
+- `theme`:
+  - `navy`: azul-marinho e dourado
+  - `ivory`: marfim e verde-floresta
+  - `burgundy`: vinho e creme
+  - `graphite`: grafite e cobre
+  - `teal`: petróleo e areia
+  - `cobalt`: branco e azul-cobalto
+  - `slate`: cinza e bordô
+  - `plum`: ameixa e champanhe
+- `photo` (opcional): arquivo de imagem na pasta do post, por exemplo `foto.jpg`. Usado nos layouts `photo` e `band`. Sem foto, o layout `photo` gera uma arte geométrica nas cores do tema.
+- `keyword` (layout `band`): uma palavra-chave em maiúsculas, por exemplo SERVIR.
+
+**Regras de rodízio:**
+- Não repetir o `layout` nem o `theme` usados nos 3 posts anteriores (consulte as colunas do registro).
+- Alternar fundos claros (`ivory`, `cobalt`, `slate`) com fundos escuros.
+- Fotos: pessoas em ambiente de trabalho, arquitetura corporativa, mãos e reuniões, sempre com tom sóbrio. Buscar em bancos com licença de uso livre (Unsplash, Pexels) e registrar o crédito do fotógrafo na legenda.
+
 ## Formato da arte (`post.json`)
 - `tag`: nome do pilar, por exemplo "Pílula de Carreira"
 - `num`: número sequencial (#01, #02…)
@@ -32,11 +58,10 @@ Consultor sênior falando com executivos e líderes: direto, reflexivo e prátic
 Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 
 ## Registro de postagens (não repetir temas)
-| # | Data | Pilar | Tema |
-|---|------|-------|------|
-| 01 | 2026-11-14 | Liderança e decisão | A complexidade não é o problema, ela é o trabalho: 3 movimentos para decidir sob pressão |
-| 02 | 2026-11-14 | Carreira (mentoria + FGV cc/gd) | Carreira não é escada, é plano: carreira horizontal, competências humanas e PDI |
-| 03 | 2026-11-15 | Estratégia e gestão (FGV gd p33–34) | Meta que não vira número vira opinião: método SMART e metas construídas em conjunto |
-| 04 | 2026-11-16 | Pessoas e liderança (FGV pl p46–47, gd p33) | Maior é o que serve: ouvir, discernir e servir (liderança de apoio + situacional) |
-
+| # | Data | Pilar | Tema | Layout/tema |
+|---|------|-------|------|------|
+| 01 | 2026-11-14 | Liderança e decisão | A complexidade não é o problema, ela é o trabalho: 3 movimentos para decidir sob pressão | classic/navy |
+| 02 | 2026-11-14 | Carreira (mentoria + FGV cc/gd) | Carreira não é escada, é plano: carreira horizontal, competências humanas e PDI | classic/navy |
+| 03 | 2026-11-15 | Estratégia e gestão (FGV gd p33–34) | Meta que não vira número vira opinião: método SMART e metas construídas em conjunto | classic/navy |
+| 04 | 2026-11-16 | Pessoas e liderança (FGV pl p46–47, gd p33) | Maior é o que serve: ouvir, discernir e servir (liderança de apoio + situacional) | classic/navy |
 Próximas sugestões do banco: avaliação 360° (gd p44), OKR (pj p40), feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).

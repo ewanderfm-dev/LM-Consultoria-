@@ -2,59 +2,168 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
-  :root { --navy:#0f1732; --navy2:#1e2d50; --gold:#ffd700; --white:#f5f3f0; }
+  /* ===== Paletas (tema) ===== */
+  .t-navy     { --bg:#0f1732; --bg2:#1e2d50; --ink:#f5f3f0; --muted:rgba(245,243,240,.78); --accent:#ffd700; --panel:rgba(255,255,255,.06); --line:rgba(255,215,0,.35); }
+  .t-ivory    { --bg:#f4f0e8; --bg2:#ebe4d6; --ink:#1d2a24; --muted:#4a554f; --accent:#1f4d3a; --panel:#ffffff; --line:rgba(31,77,58,.3); }
+  .t-burgundy { --bg:#4a1622; --bg2:#6b2232; --ink:#f7efe6; --muted:rgba(247,239,230,.8); --accent:#e8c99b; --panel:rgba(255,255,255,.07); --line:rgba(232,201,155,.4); }
+  .t-graphite { --bg:#1c1d20; --bg2:#2a2c31; --ink:#eceae6; --muted:rgba(236,234,230,.72); --accent:#c98b5a; --panel:rgba(255,255,255,.05); --line:rgba(201,139,90,.4); }
+  .t-teal     { --bg:#0e3b43; --bg2:#13505a; --ink:#f3ede1; --muted:rgba(243,237,225,.8); --accent:#e3c78f; --panel:rgba(255,255,255,.07); --line:rgba(227,199,143,.4); }
+  .t-cobalt   { --bg:#f7f8fb; --bg2:#e9edf6; --ink:#121a33; --muted:#4b5470; --accent:#1d3c8f; --panel:#ffffff; --line:rgba(29,60,143,.25); }
+  .t-slate    { --bg:#e6e9ec; --bg2:#d5dadf; --ink:#1f262e; --muted:#4d5864; --accent:#8a1c2b; --panel:#ffffff; --line:rgba(138,28,43,.3); }
+  .t-plum     { --bg:#2b1e33; --bg2:#3d2a48; --ink:#f4eef6; --muted:rgba(244,238,246,.78); --accent:#d9b8a3; --panel:rgba(255,255,255,.07); --line:rgba(217,184,163,.4); }
+
   * { margin:0; padding:0; box-sizing:border-box; }
   html, body { width:1080px; height:1350px; }
-  body {
-    font-family:'Poppins', sans-serif; color:var(--white);
-    background:linear-gradient(150deg, var(--navy) 0%, var(--navy2) 100%);
-    position:relative; overflow:hidden; padding:90px 90px 80px;
-    display:flex; flex-direction:column;
-  }
-  body::before { content:''; position:absolute; inset:0;
-    background:radial-gradient(circle at 85% 12%, rgba(255,215,0,.13) 0%, transparent 42%); }
-  .top { display:flex; justify-content:space-between; align-items:center; position:relative; }
-  .tag { font-size:22px; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-weight:500; }
-  .num { font-family:'Playfair Display',serif; font-size:30px; color:var(--gold); opacity:.55; }
-  .rule { width:90px; height:5px; background:var(--gold); margin:48px 0 40px; position:relative; }
-  h1 { font-family:'Playfair Display',serif; font-size:68px; line-height:1.12; font-weight:700; position:relative; }
-  h1 em { color:var(--gold); font-style:italic; }
-  .lead { font-size:28px; line-height:1.55; font-weight:300; margin-top:34px; color:rgba(245,243,240,.88); position:relative; }
-  .items { margin-top:48px; display:flex; flex-direction:column; gap:26px; position:relative; }
-  .item { display:flex; gap:26px; align-items:flex-start; background:rgba(255,255,255,.05);
-    border-left:4px solid var(--gold); padding:24px 28px; border-radius:6px; }
-  .item b { font-family:'Playfair Display',serif; font-size:40px; color:var(--gold); line-height:1; min-width:44px; }
-  .item h3 { font-size:28px; font-weight:600; margin-bottom:4px; }
-  .item p { font-size:22px; font-weight:300; line-height:1.45; color:rgba(245,243,240,.8); }
-  .foot { margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; position:relative;
-    border-top:1px solid rgba(255,215,0,.3); padding-top:28px; }
-  .brand { font-family:'Playfair Display',serif; font-size:30px; }
-  .brand span { display:block; font-family:'Poppins',sans-serif; font-size:19px; font-weight:300; opacity:.75; margin-top:2px; }
-  .cta { font-size:20px; color:var(--gold); text-align:right; max-width:560px; }
+  body { font-family:'Poppins',sans-serif; color:var(--ink); background:var(--bg); overflow:hidden; position:relative; }
+  em { font-style:italic; color:var(--accent); }
+  .serif { font-family:'Playfair Display',serif; }
+  .brand { font-family:'Playfair Display',serif; font-size:30px; line-height:1.1; }
+  .brand span { display:block; font-family:'Poppins',sans-serif; font-size:19px; font-weight:300; color:var(--muted); margin-top:4px; }
+  .src { font-size:19px; color:var(--accent); text-align:right; max-width:600px; }
+  .tag { font-size:21px; letter-spacing:5px; text-transform:uppercase; color:var(--accent); font-weight:600; }
+  .num { font-family:'Playfair Display',serif; font-size:30px; color:var(--accent); opacity:.7; }
+  .photo { background-size:cover; background-position:center; position:relative; }
+
+  /* ===== Layout: classic ===== */
+  .L-classic { background:linear-gradient(150deg,var(--bg) 0%,var(--bg2) 100%); padding:90px 90px 80px; display:flex; flex-direction:column; }
+  .L-classic .top { display:flex; justify-content:space-between; }
+  .L-classic .rule { width:90px; height:5px; background:var(--accent); margin:48px 0 40px; }
+  .L-classic h1 { font-family:'Playfair Display',serif; font-size:68px; line-height:1.12; }
+  .L-classic .lead { font-size:28px; line-height:1.55; font-weight:300; margin-top:34px; color:var(--muted); }
+  .L-classic .items { margin-top:48px; display:flex; flex-direction:column; gap:26px; }
+  .L-classic .item { display:flex; gap:26px; background:var(--panel); border-left:4px solid var(--accent); padding:24px 28px; border-radius:6px; }
+  .L-classic .item b { font-family:'Playfair Display',serif; font-size:40px; color:var(--accent); line-height:1; min-width:44px; }
+  .L-classic .item h3 { font-size:28px; font-weight:600; margin-bottom:4px; }
+  .L-classic .item p { font-size:22px; font-weight:300; line-height:1.45; color:var(--muted); }
+  .L-classic .foot { margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--line); padding-top:28px; }
+
+  /* ===== Layout: editorial (claro, fios finos, sem caixas) ===== */
+  .L-editorial { padding:80px 96px; display:flex; flex-direction:column; background:var(--bg); }
+  .L-editorial .mast { display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid var(--ink); padding-bottom:22px; }
+  .L-editorial .mast .brand { font-size:26px; }
+  .L-editorial .kicker { margin-top:70px; }
+  .L-editorial h1 { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:130px; line-height:.98; margin-top:26px; letter-spacing:-1px; }
+  .L-editorial .lead { font-size:30px; line-height:1.55; font-weight:300; margin-top:36px; color:var(--muted); max-width:820px; }
+  .L-editorial .items { margin-top:auto; }
+  .L-editorial .item { display:grid; grid-template-columns:90px 1fr; padding:26px 0; border-top:1px solid var(--line); }
+  .L-editorial .item b { font-family:'Cormorant Garamond',serif; font-size:52px; color:var(--accent); line-height:.9; }
+  .L-editorial .item h3 { font-size:30px; font-weight:600; }
+  .L-editorial .item p { font-size:23px; color:var(--muted); font-weight:300; margin-top:4px; }
+  .L-editorial .foot { display:flex; justify-content:space-between; align-items:center; border-top:2px solid var(--ink); padding-top:22px; }
+  .L-editorial .foot .num { font-size:26px; }
+
+  /* ===== Layout: photo (imagem no topo, painel embaixo) ===== */
+  .L-photo { display:flex; flex-direction:column; background:var(--bg); }
+  .L-photo .hero { height:600px; position:relative; overflow:hidden; }
+  .L-photo .hero::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,var(--bg) 100%); }
+  .L-photo .hero .tagbox { position:absolute; top:70px; left:90px; z-index:2; background:var(--bg); padding:14px 22px; }
+  .L-photo .body { padding:0 90px 76px; margin-top:-120px; position:relative; z-index:2; display:flex; flex-direction:column; flex:1; }
+  .L-photo h1 { font-family:'Playfair Display',serif; font-size:76px; line-height:1.06; }
+  .L-photo .lead { font-size:25px; line-height:1.5; font-weight:300; margin-top:22px; color:var(--muted); }
+  .L-photo .items { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:40px; }
+  .L-photo .item { border-top:4px solid var(--accent); padding-top:18px; }
+  .L-photo .item h3 { font-size:28px; font-weight:600; }
+  .L-photo .item p { font-size:21px; color:var(--muted); line-height:1.42; margin-top:6px; font-weight:300; }
+  .L-photo .item b { display:none; }
+  .L-photo .foot { margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; }
+
+  /* ===== Layout: quote (frase central, colunas embaixo) ===== */
+  .L-quote { background:radial-gradient(circle at 50% 35%,var(--bg2) 0%,var(--bg) 70%); padding:90px; display:flex; flex-direction:column; align-items:center; text-align:center; }
+  .L-quote .mark { font-family:'Playfair Display',serif; font-size:300px; line-height:.7; color:var(--accent); opacity:.85; margin-top:90px; height:170px; }
+  .L-quote h1 { font-family:'Playfair Display',serif; font-size:100px; line-height:1.08; margin-top:10px; }
+  .L-quote .lead { font-size:29px; line-height:1.55; font-weight:300; margin-top:34px; color:var(--muted); max-width:820px; }
+  .L-quote .sep { width:120px; height:2px; background:var(--accent); margin:52px 0 46px; }
+  .L-quote .items { display:grid; grid-template-columns:repeat(3,1fr); gap:34px; text-align:left; width:100%; }
+  .L-quote .item b { font-family:'Playfair Display',serif; font-size:34px; color:var(--accent); display:block; margin-bottom:8px; }
+  .L-quote .item h3 { font-size:29px; font-weight:600; }
+  .L-quote .item p { font-size:22px; color:var(--muted); line-height:1.42; margin-top:6px; font-weight:300; }
+  .L-quote .foot { margin-top:auto; width:100%; display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--line); padding-top:26px; text-align:left; }
+
+  /* ===== Layout: band (faixa lateral com palavra-chave) ===== */
+  .L-band { display:grid; grid-template-columns:330px 1fr; background:var(--bg); }
+  .L-band .side { background:var(--accent); color:var(--bg); position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:80px 46px; }
+  .L-band .side .num { color:var(--bg); opacity:.8; font-size:44px; }
+  .L-band .side .word { font-family:'Inter',sans-serif; font-weight:800; font-size:150px; line-height:1; writing-mode:vertical-rl; transform:rotate(180deg); letter-spacing:4px; opacity:.95; align-self:center; }
+  .L-band .main { padding:90px 80px 76px 74px; display:flex; flex-direction:column; }
+  .L-band h1 { font-family:'Playfair Display',serif; font-size:80px; line-height:1.08; margin-top:40px; }
+  .L-band .lead { font-size:25px; line-height:1.55; font-weight:300; margin-top:30px; color:var(--muted); }
+  .L-band .items { margin-top:46px; display:flex; flex-direction:column; gap:30px; }
+  .L-band .item { display:flex; gap:22px; }
+  .L-band .item b { font-family:'Inter',sans-serif; font-weight:800; font-size:22px; color:var(--bg); background:var(--accent); width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .L-band .item h3 { font-size:29px; font-weight:600; }
+  .L-band .item p { font-size:22px; color:var(--muted); line-height:1.42; font-weight:300; margin-top:2px; }
+  .L-band .foot { margin-top:auto; display:flex; flex-direction:column; gap:14px; border-top:1px solid var(--line); padding-top:24px; }
+  .L-band .foot .src { text-align:left; }
+
+  /* ===== Layout: cards (grade de cartões) ===== */
+  .L-cards { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); padding:86px 80px 72px; display:flex; flex-direction:column; }
+  .L-cards .top { display:flex; justify-content:space-between; align-items:center; }
+  .L-cards h1 { font-family:'Inter',sans-serif; font-weight:800; font-size:92px; line-height:1.04; letter-spacing:-2px; margin-top:56px; }
+  .L-cards h1 em { font-family:'Playfair Display',serif; font-weight:700; letter-spacing:0; }
+  .L-cards .lead { font-size:26px; line-height:1.55; font-weight:300; margin-top:30px; color:var(--muted); }
+  .L-cards .items { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:52px; }
+  .L-cards .item { background:var(--panel); border-radius:18px; padding:40px 28px; box-shadow:0 10px 30px rgba(0,0,0,.08); min-height:440px; }
+  .L-cards .item b { font-family:'Inter',sans-serif; font-weight:800; font-size:80px; color:var(--accent); display:block; line-height:1; }
+  .L-cards .item h3 { font-size:30px; font-weight:600; margin-top:22px; }
+  .L-cards .item p { font-size:22px; color:var(--muted); line-height:1.45; margin-top:10px; font-weight:300; }
+  .L-cards .foot { margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; }
 </style>
 </head>
 <body>
-  <div class="top"><div class="tag" id="tag"></div><div class="num" id="num"></div></div>
-  <div class="rule"></div>
-  <h1 id="title"></h1>
-  <p class="lead" id="lead"></p>
-  <div class="items" id="items"></div>
-  <div class="foot">
-    <div class="brand">LM Consultoria<span>Ewander Ferreira de Macedo</span></div>
-    <div class="cta" id="cta"></div>
-  </div>
 <script>
+(function(){
   const p = window.POST;
-  document.getElementById('tag').textContent = p.tag;
-  document.getElementById('num').textContent = p.num;
-  document.getElementById('title').innerHTML = p.title;
-  if (p.titleSize) document.getElementById('title').style.fontSize = p.titleSize + 'px';
-  document.getElementById('lead').textContent = p.lead;
-  document.getElementById('cta').textContent = p.cta;
-  document.getElementById('items').innerHTML = p.items.map((it, i) =>
-    `<div class="item"><b>${i+1}</b><div><h3>${it.h}</h3><p>${it.p}</p></div></div>`).join('');
+  const L = p.layout || 'classic', T = p.theme || 'navy';
+  document.body.className = 'L-' + L + ' t-' + T;
+  const esc = s => s;
+  const items = (p.items||[]).map((it,i)=>`<div class="item"><b>${String(i+1).padStart(L==='cards'?2:1,'0')}</b><div><h3>${it.h}</h3><p>${it.p}</p></div></div>`).join('');
+  const brand = `<div class="brand">LM Consultoria<span>Ewander Ferreira de Macedo</span></div>`;
+  const src = `<div class="src">${p.cta||''}</div>`;
+  const tsize = p.titleSize ? ` style="font-size:${p.titleSize}px"` : '';
+  // Imagem: foto (arquivo local/URL) ou arte abstrata em SVG nas cores do tema
+  const art = () => {
+    if (p.photo) return `background-image:url(${p.photo})`;
+    const cs = getComputedStyle(document.body);
+    const a = cs.getPropertyValue('--accent').trim(), b = cs.getPropertyValue('--bg2').trim(), c = cs.getPropertyValue('--bg').trim();
+    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='600'><rect width='1080' height='600' fill='${b}'/><circle cx='860' cy='120' r='300' fill='${a}' opacity='.22'/><circle cx='980' cy='420' r='180' fill='none' stroke='${a}' stroke-width='3' opacity='.6'/><path d='M0 600 L0 330 L520 120 L1080 520 L1080 600 Z' fill='${c}' opacity='.55'/><path d='M0 600 L380 360 L760 600 Z' fill='${a}' opacity='.18'/><g stroke='${a}' stroke-width='2' opacity='.35'>${Array.from({length:12},(_,i)=>`<line x1='${90+i*30}' y1='80' x2='${90+i*30}' y2='260'/>`).join('')}</g></svg>`;
+    return `background-image:url(data:image/svg+xml;utf8,${encodeURIComponent(svg).replace(/'/g,'%27').replace(/\(/g,'%28').replace(/\)/g,'%29')})`;
+  };
+  let html = '';
+  if (L === 'editorial') html = `
+    <div class="mast">${brand}<div class="tag">${p.tag}</div></div>
+    <div class="kicker num">${p.num}</div>
+    <h1${tsize}>${p.title}</h1><p class="lead">${p.lead}</p>
+    <div class="items">${items}</div>
+    <div class="foot"><div class="num">${p.num}</div>${src}</div>`;
+  else if (L === 'photo') html = `
+    <div class="hero photo" style="${art()}"><div class="tagbox tag">${p.tag}</div></div>
+    <div class="body"><h1${tsize}>${p.title}</h1><p class="lead">${p.lead}</p>
+    <div class="items">${items}</div>
+    <div class="foot">${brand}${src}</div></div>`;
+  else if (L === 'quote') html = `
+    <div class="tag">${p.tag} · ${p.num}</div><div class="mark">“</div>
+    <h1${tsize}>${p.title}</h1><p class="lead">${p.lead}</p><div class="sep"></div>
+    <div class="items">${items}</div>
+    <div class="foot">${brand}${src}</div>`;
+  else if (L === 'band') html = `
+    <div class="side"><div class="num">${p.num}</div><div class="word">${p.keyword||''}</div></div>
+    <div class="main"><div class="tag">${p.tag}</div><h1${tsize}>${p.title}</h1><p class="lead">${p.lead}</p>
+    <div class="items">${items}</div>
+    <div class="foot">${brand}${src}</div></div>`;
+  else if (L === 'cards') html = `
+    <div class="top"><div class="tag">${p.tag}</div><div class="num">${p.num}</div></div>
+    <h1${tsize}>${p.title}</h1><p class="lead">${p.lead}</p>
+    <div class="items">${items}</div>
+    <div class="foot">${brand}${src}</div>`;
+  else html = `
+    <div class="top"><div class="tag">${p.tag}</div><div class="num">${p.num}</div></div>
+    <div class="rule"></div><h1${tsize}>${p.title}</h1><p class="lead">${p.lead}</p>
+    <div class="items">${items}</div>
+    <div class="foot">${brand}${src}</div>`;
+  document.body.innerHTML = html;
+})();
 </script>
 </body>
 </html>
