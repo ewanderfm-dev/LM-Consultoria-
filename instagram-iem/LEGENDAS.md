@@ -66,3 +66,62 @@ Ainda não está em uma célula? Me chama no direct ou fale com a gente pelo "Co
 ---
 
 **Cultos:** domingos 10h30 e 18h30 · Rua Prof. Cardoso Fontes, 137 – Castelânea, Petrópolis/RJ
+
+---
+
+## Segunda leva (ainda com conteúdo do site)
+
+### Dia 4 — quarta, 18/11 · `dia-04-missao.png`
+**Tema:** A missão da Igreja em Movimento
+
+**Legenda:**
+
+Não fomos chamados só para encher um templo no domingo.
+Fomos chamados para transformar uma cidade.
+
+A missão da Igreja em Movimento é clara: transformar Petrópolis e as nações, fazendo discípulos, formando líderes, multiplicando células e igrejas.
+
+Foi isso que Jesus nos mandou fazer: "Ide, portanto, fazei discípulos de todas as nações" (Mateus 28:19). Não é tarefa de um pastor nem de um pequeno grupo. É de cada um que foi alcançado pela graça.
+
+Você já se enxerga nessa missão? Comenta "EU VOU" 🔥
+
+#Missão #FazeiDiscípulos #IgrejaEmMovimento #Petrópolis #IgrejaEmCélulas #Mateus28
+
+---
+
+### Dia 5 — quinta, 19/11 · `dia-05-primeiro-passo.png`
+**Tema:** Classe de Conexão — o primeiro passo
+
+**Legenda:**
+
+Ninguém começa pronto.
+Todo mundo que hoje serve, lidera e cuida um dia deu o primeiro passo.
+
+"O Senhor firma os passos do homem bom e no seu caminho se compraz" (Salmos 37:23). Deus não espera que você tenha todas as respostas. Ele só pede que você dê o próximo passo.
+
+Na Igreja em Movimento existe a Classe de Conexão: um espaço para quem quer conhecer a visão da IEM, ser batizado ou começar a caminhada com Jesus.
+
+Quer participar ou conhece alguém que precisa desse passo? Me chama no direct ou procure a gente no domingo, às 10h30 ou 18h30. 👣
+
+#ClasseDeConexão #PrimeiroPasso #Batismo #IgrejaEmMovimento #Petrópolis #Fé
+
+---
+
+### Dia 6 — sexta, 20/11 · `dia-06-religar-7-dias.png`
+**Tema:** Contagem regressiva para o Retiro Religar (postar exatamente no dia 20 — faltam 7 dias)
+
+**Legenda:**
+
+Faltam 7 dias. ⏳
+
+Daqui a uma semana a gente vai desacelerar, sair da rotina e separar um tempo só para ouvir a voz de Deus. O RELIGAR é isso: parar, ouvir e se reconectar.
+
+"Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei." — Mateus 11:28
+
+🗓 27 e 28 de novembro
+📍 Pousada Vila do Sossego
+💛 R$150 por pessoa
+
+Ainda dá tempo. Inscrições pelo site da @igrejaemmovimento_iem (link na bio) ou com o seu líder de célula. Marca quem vai com você! 👇
+
+#RetiroReligar #IgrejaEmMovimento #Petrópolis #TempoComDeus #Reconecte
