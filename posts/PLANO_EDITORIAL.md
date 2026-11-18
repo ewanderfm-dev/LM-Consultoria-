@@ -65,5 +65,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | 03 | 2026-11-15 | Estratégia e gestão (FGV gd p33–34) | Meta que não vira número vira opinião: método SMART e metas construídas em conjunto | classic/navy |
 | 04 | 2026-11-16 | Pessoas e liderança (FGV pl p46–47, gd p33) | Maior é o que serve: ouvir, discernir e servir (liderança de apoio + situacional) | classic/navy |
 | 05 | 2026-11-17 | Desenvolvimento (FGV gd p44) | Crescer é ter coragem de ser visto por inteiro: avaliação 360° | editorial/ivory |
+| 06 | 2026-11-18 | Estratégia (FGV pj p40) | Propósito claro, resultado que se mede: OKR | band/teal |
 
-Próximas sugestões do banco: OKR (pj p40), feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).
+Próximas sugestões do banco: feedback baseado em fatos (gd p86), Janela de Johari, campo de forças de Lewin, Canvas, PRINCE2 (pj p22).

@@ -1,0 +1,25 @@
+{
+  "layout": "band",
+  "theme": "teal",
+  "keyword": "FOCO",
+  "tag": "Pílula de Estratégia",
+  "num": "#06",
+  "title": "Propósito claro. <em>Resultado que se mede.</em>",
+  "lead": "Com OKR, a equipe sabe aonde vai e sabe quando chegou.",
+  "items": [
+    {
+      "h": "Um objetivo que inspira",
+      "p": "Diga o que precisa ser alcançado, em palavras que movem pessoas."
+    },
+    {
+      "h": "Resultados-chave que provam",
+      "p": "Poucas métricas objetivas que mostram quando o objetivo foi atingido."
+    },
+    {
+      "h": "Do topo para cada equipe",
+      "p": "Os OKRs da empresa se desdobram no que cada time vai entregar."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Projetos",
+  "titleSize": 94
+}
