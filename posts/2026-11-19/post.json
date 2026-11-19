@@ -1,0 +1,14 @@
+{
+  "layout": "cards",
+  "theme": "cobalt",
+  "tag": "Pílula de Liderança",
+  "num": "#07",
+  "title": "Feedback é um presente <em>entregue com cuidado.</em>",
+  "lead": "Bem conduzido, o feedback não aponta culpados: ele abre caminho para o próximo passo de quem você lidera.",
+  "items": [
+    { "h": "Hora marcada", "p": "Dê tempo e espaço. A pessoa chega preparada e com as próprias perguntas." },
+    { "h": "Fatos, não impressões", "p": "Fale de situações que realmente aconteceram, sem rótulos." },
+    { "h": "Plano em conjunto", "p": "Termine construindo juntos os próximos passos e a próxima conversa." }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Desempenho"
+}
