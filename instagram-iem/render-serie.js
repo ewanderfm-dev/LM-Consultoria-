@@ -171,7 +171,7 @@ const posts = {
 
   'dia-17-celebrar-fortalecer-profetizar': `
 <div class="post" style="background:#5b2a86">
-  <div class="abs" style="left:150px;right:150px;top:250px;height:800px;background:#fff;border-radius:28px;box-shadow:0 30px 60px rgba(0,0,0,.35);overflow:hidden">
+  <div class="abs" style="left:150px;right:150px;top:230px;height:880px;background:#fff;border-radius:28px;box-shadow:0 30px 60px rgba(0,0,0,.35);overflow:hidden">
     <div style="background:#e0337b;height:230px;position:relative">
       <div style="position:absolute;top:-6px;left:150px;width:26px;height:70px;background:#3a0b2b;border-radius:13px"></div>
       <div style="position:absolute;top:-6px;right:150px;width:26px;height:70px;background:#3a0b2b;border-radius:13px"></div>
