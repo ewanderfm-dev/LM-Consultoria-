@@ -1,0 +1,23 @@
+{
+  "layout": "quote",
+  "theme": "graphite",
+  "tag": "Pílula de Gestão",
+  "num": "#08",
+  "title": "Toda experiência<br><em>é matéria-prima.</em>",
+  "lead": "Equipes maduras transformam cada projeto, acerto ou tropeço em aprendizado para o próximo.",
+  "items": [
+    {
+      "h": "Registre as lições",
+      "p": "Antes de começar, consulte o que projetos anteriores já ensinaram."
+    },
+    {
+      "h": "Revise o porquê",
+      "p": "Confirme a cada etapa se o projeto ainda faz sentido para o negócio."
+    },
+    {
+      "h": "Delegue bem",
+      "p": "Combine os limites e intervenha só quando eles forem rompidos."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Projetos"
+}
