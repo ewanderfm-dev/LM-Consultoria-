@@ -49,3 +49,21 @@ emp (Empreendedorismo) · adm · co (Comportamento Organizacional) · gerh (Gest
 - **Novas habilidades e RH 4.0** (cc p6): o Fórum Econômico Mundial lista imperativos como novas habilidades e novas carreiras. Com a automação e a IA assumindo tarefas, as competências humanas ganham peso.
 - **Gestão de projetos** (pj p22, p40): os 7 princípios do PRINCE2 (justificativa de negócio contínua, aprender com a experiência, gerenciar por exceção…). Cronograma, orçamento e entregas.
 - **Outros temas disponíveis nas apostilas:** CHA de competências (pl), BSC (gd), stakeholders (pj), persona e processo de decisão do consumidor, Maslow (cs), ruído e comunicação não verbal (ec), Hofstede (co).
+
+## Sumários das apostilas (temas confirmados, sem página; cite a unidade)
+- **Gestão de Pessoas e Liderança:**
+  - U1 Organização, cultura e poder
+  - U2 Motivação e correntes teóricas
+  - U3 Clima organizacional e gestão de conflitos
+  - U4 ESG e gestão de pessoas
+  - U5 Liderança: competências essenciais do líder, teoria da capacidade, caminho-objetivo, situacional, hierarquias
+  - U6 Instrumentos de avaliação de desempenho e distorções avaliativas
+  - U7 Programas de avaliação: garantia de feedback, avaliação contínua, indicadores em excesso, diálogo avaliador e avaliado, foco no valor agregado
+  - U8 Educação corporativa e gestão do conhecimento
+  - U9 Gestão por competência
+- **Cargos, Carreiras e Remuneração:** remuneração e competitividade, análise e descrição de cargos, competências organizacionais.
+- **Pessoas e Internacionalização (pi):**
+  - Orientações etnocêntrica, policêntrica, regiocêntrica e geocêntrica
+  - Forças motrizes e restritivas
+  - Miopia gerencial e cultura organizacional
+  - Ambiente cultural nos negócios

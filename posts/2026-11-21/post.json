@@ -1,0 +1,24 @@
+{
+  "layout": "photo",
+  "theme": "slate",
+  "tag": "Pílula de Pessoas",
+  "num": "#09",
+  "title": "Conflito bem conduzido<br><em>fortalece a equipe.</em>",
+  "lead": "Toda equipe viva tem divergências. O papel do líder é transformá-las em diálogo, não em ruptura.",
+  "items": [
+    {
+      "h": "Trate cedo",
+      "p": "Conflito ignorado contamina o clima. Converse logo."
+    },
+    {
+      "h": "Olhe os fatos",
+      "p": "Separe as pessoas das posições e foque no problema."
+    },
+    {
+      "h": "Ouça interesses",
+      "p": "Por trás de cada posição há uma necessidade real."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança",
+  "titleSize": 84
+}

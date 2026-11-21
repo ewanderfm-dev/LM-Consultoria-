@@ -68,5 +68,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | 06 | 2026-11-18 | Estratégia (FGV pj p40) | Propósito claro, resultado que se mede: OKR | band/teal |
 | 07 | 2026-11-19 | Liderança (FGV gd p86) | Feedback é um presente entregue com cuidado: hora marcada, fatos e plano conjunto | cards/cobalt |
 | 08 | 2026-11-20 | Gestão (FGV pj p22) | Toda experiência é matéria-prima: princípios PRINCE2 (aprender, justificar, gerenciar por exceção) | quote/graphite |
+| 09 | 2026-11-21 | Pessoas (FGV pl Unid. 3 + mentoria) | Conflito bem conduzido fortalece a equipe: clima, fatos e interesses | photo/slate |
 
 Próximas sugestões do banco: Janela de Johari, campo de forças de Lewin, Canvas.
