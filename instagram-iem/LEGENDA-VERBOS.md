@@ -16,3 +16,8 @@ Chegamos ao último bimestre do ano. E, antes de correr para as festas, Deus nos
 Qual desses três verbos você mais precisa viver agora? Comenta aqui 👇
 
 #Celebrar #Fortalecer #Profetizar #Efésios1 #IgrejaEmMovimento #Petrópolis
+
+---
+
+## Versão na identidade da IEM · `arte-celebrar-fortalecer-profetizar-iem.png`
+Cores e fontes do site igrejaemmovimento.com.br: verde-musgo #24281F / #3E4532, oliva #5D6453 / #787A57, cáqui #CCC88C, verde-claro #D0E6A5, amarelo-manteiga #FFDD94; títulos em Giovanna (a fonte da logo) e textos em Nunito. A legenda acima vale para esta versão também.
