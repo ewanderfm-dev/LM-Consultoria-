@@ -1,0 +1,24 @@
+{
+  "layout": "editorial",
+  "theme": "burgundy",
+  "tag": "Pílula de Carreira",
+  "num": "#10",
+  "title": "Competência é<br>saber, fazer<br><em>e querer.</em>",
+  "titleSize": 112,
+  "lead": "O CHA lembra que diploma não basta: o que transforma resultados é a soma de três dimensões.",
+  "items": [
+    {
+      "h": "Conhecimento",
+      "p": "O saber: o que você estudou, leu e entende do seu campo."
+    },
+    {
+      "h": "Habilidade",
+      "p": "O saber fazer: a capacidade de aplicar o que sabe na prática."
+    },
+    {
+      "h": "Atitude",
+      "p": "O querer fazer: a disposição de agir, aprender e servir."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança"
+}
