@@ -1,0 +1,16 @@
+{
+  "layout": "band",
+  "theme": "ivory",
+  "keyword": "APRENDER",
+  "tag": "Pílula de Desenvolvimento",
+  "num": "#11",
+  "title": "Conhecimento compartilhado <em>se multiplica.</em>",
+  "titleSize": 86,
+  "lead": "Organizações que crescem fazem do aprendizado um hábito coletivo, não um evento isolado.",
+  "items": [
+    { "h": "Treine para hoje", "p": "Desenvolva as competências de que a equipe precisa agora." },
+    { "h": "Eduque para sempre", "p": "Crie trilhas de educação continuada, além do curso pontual." },
+    { "h": "Guarde o que se aprende", "p": "Registre e compartilhe: o que um sabe, todos podem acessar." }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança"
+}
