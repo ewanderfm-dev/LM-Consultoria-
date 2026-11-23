@@ -14,3 +14,8 @@ Não é correto dizer que Deus precisava daquela dor. Mas é correto afirmar: me
 Tenha fé. Até a dor mais profunda pode ser canalizada para que você viva o que Deus quer que você viva. Persevere! 🙌
 
 #SonheUmSonhoMaior #José #Romanos828 #IgrejaEmMovimento #Petrópolis
+
+---
+
+## Versão com foto · `frase-impulso-foto.png`
+Foto do Pr. Ewander pregando, paleta azul-noite e laranja-dourado. A legenda acima vale para esta versão também.
