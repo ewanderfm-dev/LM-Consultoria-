@@ -19,3 +19,20 @@ Tenha fé. Até a dor mais profunda pode ser canalizada para que você viva o qu
 
 ## Versão com foto · `frase-impulso-foto.png`
 Foto do Pr. Ewander pregando, paleta azul-noite e laranja-dourado. A legenda acima vale para esta versão também.
+
+---
+
+# Arte `frase-loucura-sobrenatural.png`
+"Todo grande sonho, no princípio, parece loucura. Um sonho sobrenatural se realizará por um caminho sobrenatural."
+
+**Legenda:**
+
+Quando José contou o sonho, os irmãos riram. Não cabia na cabeça deles que o mais novo pudesse viver algo tão diferente. Tinha mais cara de alucinação do que de revelação.
+
+Todo grande sonho, no princípio, parece loucura. Mas, se vem de Deus, mesmo que incomode quem está paralisado, seguirá por caminhos que só Ele conhece.
+
+E aqui está o segredo: um sonho sobrenatural se realizará por um caminho sobrenatural. Não espere que o plano de Deus siga a lógica natural. Ele passa por cova, por prisão, por espera… e chega ao palácio.
+
+Como você tem esperado que os planos de Deus se realizem: de forma natural ou sobrenatural? 👇
+
+#SonheUmSonhoMaior #José #Gênesis37 #IgrejaEmMovimento #Petrópolis
