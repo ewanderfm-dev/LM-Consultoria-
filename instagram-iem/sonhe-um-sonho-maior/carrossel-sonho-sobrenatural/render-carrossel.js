@@ -40,92 +40,43 @@ const grain = `<svg class="abs" style="inset:0;opacity:.18;mix-blend-mode:multip
 
 const posts = {
   ...(() => {
-  const V = '#160d2e', V2 = '#2a1a52', G = '#ffd36b', L = '#c9b8ff';
-  const bg = `background:radial-gradient(circle at 85% 10%,${V2} 0,transparent 50%),radial-gradient(circle at 0% 100%,${V2} 0,transparent 45%),${V}`;
-  const st = (n, h, y0 = 0) => Array.from({ length: n }, (_, i) => `<circle cx="${(i * 157) % 1080}" cy="${y0 + (i * 67) % h}" r="${i % 3 + 1}" fill="#fff" opacity="${0.15 + (i % 5) / 10}"/>`).join('');
-  const star = (x, y, s = 1, c = G) => `<path d="M0 -26 L7 -7 L26 0 L7 7 L0 26 L-7 7 L-26 0 L-7 -7Z" fill="${c}" transform="translate(${x} ${y}) scale(${s})"/>`;
-  const sheaf = (x, y, s, c, r = 0) => `<g transform="translate(${x} ${y}) rotate(${r}) scale(${s})">${[-24, -12, 0, 12, 24].map(a => `<path d="M0 0 L${a * 1.6} -150" stroke="${c}" stroke-width="7" stroke-linecap="round"/><ellipse cx="${a * 1.7}" cy="-160" rx="11" ry="26" fill="${c}" transform="rotate(${a} ${a * 1.7} -160)"/>`).join('')}<path d="M-8 0 L-24 120 M8 0 L24 120 M0 0 V125" stroke="${c}" stroke-width="7" stroke-linecap="round"/></g>`;
-  const frame = (n, body) => `
-<div class="post" style="${bg}">
-  ${body}
-  <div class="abs" style="top:80px;left:72px;color:${L};font-weight:700;letter-spacing:.28em;font-size:20px">SONHE UM SONHO MAIOR · GÊNESIS 37</div>
-  <div class="abs" style="top:72px;right:72px;color:${G};font-weight:800;font-size:22px;border:2px solid ${G};border-radius:999px;padding:6px 16px">${n}/7</div>
-  <div class="abs" style="left:72px;bottom:62px;color:${L};font-weight:700;letter-spacing:.16em;font-size:20px">PR. EWANDER MACEDO</div>
-  <img class="abs" src="${img('logo_IEM.png')}" style="height:30px;right:72px;bottom:56px">
+  const BG = ['#FAF6EE', '#F3EBDD'], INK = '#2B2620', SUB = '#5E554A', AC = '#B5791F', MUTE = '#9A8F80';
+  const frame = (n, inner) => `
+<div class="post" style="background:${BG[(n + 1) % 2]}">
+  <div class="abs" style="top:80px;left:80px;color:${MUTE};font-weight:700;letter-spacing:.26em;font-size:20px">SONHE UM SONHO MAIOR · GÊNESIS 37</div>
+  <div class="abs" style="top:78px;right:80px;color:${MUTE};font-weight:700;font-size:22px;letter-spacing:.08em">${n}/7</div>
+  <div class="abs" style="left:80px;right:80px;top:170px;bottom:170px;display:flex;flex-direction:column;justify-content:center">${inner}</div>
+  <div class="abs" style="left:80px;bottom:70px;color:${MUTE};font-weight:700;letter-spacing:.16em;font-size:20px">PR. EWANDER MACEDO · IGREJA EM MOVIMENTO</div>
 </div>`;
+  const big = (t, s = 84) => `<div class="dms" style="color:${INK};font-size:${s}px;line-height:1.1">${t}</div>`;
+  const sub = t => `<div style="margin-top:44px;color:${SUB};font-size:34px;line-height:1.5">${t}</div>`;
+  const ref = t => `<div style="margin-top:40px;color:${AC};font-weight:700;letter-spacing:.16em;font-size:22px">${t}</div>`;
+  const em = t => `<i style="color:${AC}">${t}</i>`;
   return {
-  'carrossel-02-irmaos-riram': frame(2, `
-  <svg class="abs" style="inset:0" width="1080" height="1350">${st(40, 380, 140)}
-    <circle cx="790" cy="300" r="70" fill="${G}"/><circle cx="560" cy="250" r="44" fill="#fff" opacity=".9"/><circle cx="582" cy="236" r="38" fill="${V}"/>
-    ${Array.from({ length: 11 }, (_, i) => { const a = Math.PI * (0.1 + i * 0.08); return star(680 + Math.cos(a) * 230, 300 + Math.sin(a) * 120 - 40, .45, L); }).join('')}
-    ${sheaf(250, 560, 1.05, G, 0)}${sheaf(120, 600, .75, L, 28)}${sheaf(380, 600, .75, L, -28)}${sheaf(90, 650, .6, L, 45)}${sheaf(410, 650, .6, L, -45)}
-  </svg>
-  <div class="abs dms" style="top:720px;left:72px;right:72px;color:#fff;font-size:72px;line-height:1.1">Quando José contou o sonho, <i style="color:${G}">os irmãos riram.</i></div>
-  <div class="abs" style="top:960px;left:72px;right:120px;color:#e4dcff;font-size:32px;line-height:1.45">Não cabia na cabeça deles que o mais novo pudesse viver algo tão diferente. Tinha mais cara de alucinação do que de revelação.</div>
-  <div class="abs" style="top:1150px;left:72px;color:${G};font-weight:700;letter-spacing:.16em;font-size:21px">GÊNESIS 37:5-11</div>`),
-
-  'carrossel-03-limites': frame(3, `
-  <svg class="abs" style="inset:0" width="1080" height="1350">
-    <rect x="140" y="200" width="800" height="440" rx="20" fill="none" stroke="${L}" stroke-width="4" stroke-dasharray="14 12" opacity=".7"/>
-    <path d="M540 640 C 560 520, 620 360, 820 160" stroke="${G}" stroke-width="10" fill="none" stroke-linecap="round"/>
-    ${star(840, 140, 1.3)}
-    <circle cx="540" cy="640" r="16" fill="${G}"/>
-    <text x="170" y="250" font-family="Inter" font-weight="700" font-size="24" fill="${L}" opacity=".8">LIMITES NATURAIS</text>
-  </svg>
-  <div class="abs dms" style="top:730px;left:72px;right:72px;color:#fff;font-size:76px;line-height:1.08">O sobrenatural <i style="color:${G}">expõe</i> os limites naturais.</div>
-  <div class="abs" style="top:960px;left:72px;right:120px;color:#e4dcff;font-size:32px;line-height:1.45">Se vem de Deus, mesmo que incomode quem está paralisado, o sonho seguirá por caminhos que só Ele conhece.</div>`),
-
-  'carrossel-04-caminho': frame(4, `
-  <svg class="abs" style="left:0;top:150px" width="1080" height="560">
-    <defs><linearGradient id="tr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${L}"/><stop offset="1" stop-color="${G}"/></linearGradient></defs>
-    <path d="M80 250 C 160 250, 180 420, 260 420 S 350 310, 430 310 S 530 460, 610 460 S 770 400, 960 110" stroke="url(#tr)" stroke-width="10" fill="none" stroke-linecap="round"/>
-    ${[[80, 250, 'sonho'], [260, 420, 'cova'], [430, 310, 'Potifar'], [610, 460, 'prisão']].map(([x, y, t]) => `<circle cx="${x}" cy="${y}" r="13" fill="${V}" stroke="${L}" stroke-width="5"/><text x="${x}" y="${y + 52}" text-anchor="middle" font-family="Inter" font-weight="700" font-size="26" fill="${L}">${t}</text>`).join('')}
-    <circle cx="960" cy="110" r="46" fill="${G}" opacity=".22"/>${star(960, 110, 1.1)}
-    <text x="960" y="200" text-anchor="middle" font-family="Inter" font-weight="800" font-size="26" fill="${G}">palácio</text>
-  </svg>
-  <div class="abs dms" style="top:740px;left:72px;right:72px;color:#fff;font-size:70px;line-height:1.1">Não espere que o plano de Deus siga a <i style="color:${L}">lógica natural.</i></div>
-  <div class="abs" style="top:970px;left:72px;right:120px;color:#e4dcff;font-size:32px;line-height:1.45">Ele passa por cova, por prisão, por espera… <span style="color:${G};font-weight:700">e chega ao palácio.</span></div>`),
-
-  'carrossel-05-tudo-coopera': frame(5, `
-  <svg class="abs" style="inset:0" width="1080" height="1350">${st(60, 520, 140)}
-    ${[0, 1, 2, 3, 4, 5].map(i => `<circle cx="540" cy="420" r="${70 + i * 48}" fill="none" stroke="${i % 2 ? L : G}" stroke-width="3" opacity="${0.75 - i * 0.11}"/>`).join('')}
-    ${star(540, 420, 1.6)}
-  </svg>
-  <div class="abs dms" style="top:770px;left:72px;right:72px;color:#fff;font-size:84px;line-height:1.05">Tudo <i style="color:${G}">coopera</i> para o bem.</div>
-  <div class="abs" style="top:960px;left:72px;right:120px;color:#e4dcff;font-size:32px;line-height:1.45">A traição, a injustiça e a prisão não pararam José. Mesmo a dor mais profunda será canalizada para que você viva o que Deus quer que você viva.</div>
-  <div class="abs" style="top:1170px;left:72px;color:${G};font-weight:700;letter-spacing:.16em;font-size:21px">ROMANOS 8:28</div>`),
-
-  'carrossel-06-persevere': frame(6, `
-  <div class="abs dms" style="top:150px;left:72px;right:72px;color:#fff;font-size:76px;line-height:1.05">Uma hora <i style="color:${G}">o sonho se realiza.</i></div>
-  <div class="abs" style="left:122px;top:420px;width:8px;height:560px;background:linear-gradient(${L},${G});border-radius:4px"></div>
-  ${[['17 anos', 'José sonha', 'Gn 37:2'], ['30 anos', 'diante do Faraó · 13 anos depois', 'Gn 41:46'], ['+20 anos', 'a família se curva · o sonho se cumpre', 'Gn 42–45']].map(([a, b, r], i) => `
-  <div class="abs" style="left:100px;top:${415 + i * 240}px;width:52px;height:52px;border-radius:50%;background:${i === 2 ? G : V};border:6px solid ${i === 2 ? G : L}"></div>
-  <div class="abs" style="left:200px;top:${400 + i * 240}px;color:${i === 2 ? G : '#fff'};font-weight:800;font-size:64px;font-family:Inter">${a}</div>
-  <div class="abs" style="left:200px;top:${485 + i * 240}px;color:#e4dcff;font-size:30px">${b} <span style="color:${L};font-size:22px;margin-left:10px">${r}</span></div>`).join('')}
-  <div class="abs dms" style="top:1100px;left:72px;color:${G};font-size:96px"><i>Persevere!</i></div>`),
-
-  'carrossel-07-pergunta': frame(7, `
-  <img class="abs" src="${img('culto-iem.jpg')}" style="left:0;top:0;width:1080px;height:760px;object-fit:cover;object-position:80% 50%;filter:grayscale(1) contrast(1.1) brightness(.9)">
-  <div class="abs" style="left:0;top:0;width:1080px;height:760px;background:${V2};mix-blend-mode:color;opacity:.9"></div>
-  <div class="abs" style="left:0;right:0;top:0;height:200px;background:linear-gradient(${V},transparent)"></div>
-  <div class="abs" style="left:0;right:0;top:520px;height:250px;background:linear-gradient(transparent,${V})"></div>
-  <div class="abs" style="top:740px;left:72px;color:${L};font-weight:700;letter-spacing:.24em;font-size:22px">E VOCÊ?</div>
-  <div class="abs dms" style="top:790px;left:72px;right:72px;color:#fff;font-size:62px;line-height:1.12">Como você tem esperado que os planos de Deus se realizem?</div>
-  <div class="abs" style="top:1000px;left:72px;display:flex;gap:24px">
-    <div style="border:3px solid ${L};color:${L};border-radius:999px;padding:14px 30px;font-size:32px;font-weight:700;font-family:Inter">natural</div>
-    <div style="background:${G};color:${V};border-radius:999px;padding:14px 30px;font-size:32px;font-weight:800;font-family:Inter">sobrenatural</div>
-  </div>
-  <div class="abs" style="top:1120px;left:72px;color:#e4dcff;font-size:28px">Comente 👇 · Salve 📌 · Envie para quem precisa sonhar de novo 💬</div>`),
+  'carrossel-01-capa': `
+<div class="post" style="background:${BG[0]}">
+  <div class="abs" style="top:80px;left:80px;color:${MUTE};font-weight:700;letter-spacing:.26em;font-size:20px">SONHE UM SONHO MAIOR · GÊNESIS 37</div>
+  <div class="abs dms" style="top:150px;left:80px;right:80px;color:${INK};font-size:74px;line-height:1.08">Todo grande sonho, no princípio, ${em('parece loucura.')}</div>
+  <img class="abs" src="${img('pastor-palco.jpg')}" style="left:0;top:420px;width:1080px;height:560px;object-fit:cover;object-position:50% 48%">
+  <div class="abs dms" style="top:1035px;left:80px;right:80px;color:${INK};font-size:50px;line-height:1.15">Um sonho sobrenatural se realizará por um caminho ${em('sobrenatural.')}</div>
+  <div class="abs" style="left:80px;bottom:70px;color:${MUTE};font-weight:700;letter-spacing:.16em;font-size:20px">PR. EWANDER MACEDO · IGREJA EM MOVIMENTO</div>
+</div>`,
+  'carrossel-02-irmaos-riram': frame(2, big(`Quando José contou o sonho, ${em('os irmãos riram.')}`) + sub('Não cabia na cabeça deles que o mais novo pudesse viver algo tão diferente. Tinha mais cara de alucinação do que de revelação.') + ref('GÊNESIS 37:5-11')),
+  'carrossel-03-limites': frame(3, big(`O sobrenatural ${em('expõe')} os limites naturais.`, 90) + sub('Se vem de Deus, mesmo que incomode quem está paralisado, o sonho seguirá por caminhos que só Ele conhece.')),
+  'carrossel-04-caminho': frame(4, big(`Não espere que o plano de Deus siga a ${em('lógica natural.')}`) + sub(`Ele passa por cova, por prisão, por espera… <b style="color:${INK}">e chega ao palácio.</b>`)),
+  'carrossel-05-tudo-coopera': frame(5, big(`Tudo ${em('coopera')} para o bem.`, 96) + sub('A traição, a injustiça e a prisão não pararam José. Mesmo a dor mais profunda será canalizada para que você viva o que Deus quer que você viva.') + ref('ROMANOS 8:28')),
+  'carrossel-06-persevere': frame(6, big(`Uma hora ${em('o sonho se realiza.')}`, 88) + sub(`Aos 17 anos, José sonhou.<br>Aos 30, estava diante do Faraó.<br>Mais de 20 anos depois, o sonho se cumpriu por completo.`) + `<div class="dms" style="margin-top:50px;color:${AC};font-size:80px"><i>Persevere!</i></div>`),
+  'carrossel-07-pergunta': frame(7, `<div style="color:${AC};font-weight:700;letter-spacing:.24em;font-size:24px;margin-bottom:30px">E VOCÊ?</div>` + big(`Como você tem esperado que os planos de Deus se realizem: natural ou ${em('sobrenatural?')}`, 74) + sub('Comente aqui embaixo, salve este post e envie para quem precisa sonhar de novo.')),
   };
   })(),
 };
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 1 });
-  fs.mkdirSync(path.join(S, 'html14'), { recursive: true });
+  fs.mkdirSync(path.join(S, 'html15'), { recursive: true });
   for (const [name, body] of Object.entries(posts)) {
     if (ONLY && !name.includes(ONLY)) continue;
-    const f = path.join(S, 'html14', name + '.html');
+    const f = path.join(S, 'html15', name + '.html');
     fs.writeFileSync(f, `<!doctype html><html><head><meta charset="utf-8"><style>${base}</style></head><body>${body}</body></html>`);
     await page.goto('file://' + f, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
