@@ -1,0 +1,24 @@
+{
+  "layout": "cards",
+  "theme": "plum",
+  "tag": "Pílula de ESG",
+  "num": "#12",
+  "title": "O S do ESG<br><em>começa<br>dentro de casa.</em>",
+  "lead": "Antes de qualquer relatório de sustentabilidade, a primeira prova de responsabilidade social é como a empresa trata as próprias pessoas.",
+  "items": [
+    {
+      "h": "Inclusão",
+      "p": "Equipes diversas, com espaço real para todas as vozes."
+    },
+    {
+      "h": "Bem-estar",
+      "p": "Saúde, segurança e equilíbrio como parte da estratégia."
+    },
+    {
+      "h": "Propósito",
+      "p": "Desenvolvimento e sentido no trabalho de cada pessoa."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança",
+  "titleSize": 104
+}
