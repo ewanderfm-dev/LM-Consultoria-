@@ -19,3 +19,6 @@ Quem vai comigo? Marca aqui 👇
 #RetiroReligar #IgrejaEmMovimento #Petrópolis #TempoComDeus
 
 **Story:** adicione o adesivo de **contagem regressiva** ("Retiro Religar", para 27/11) no espaço livre embaixo do quadro verde.
+
+---
+Versão com fundo verde: `religar-feed-verde.png` e `religar-story-verde.png` (mesma legenda).
