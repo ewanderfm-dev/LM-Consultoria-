@@ -22,3 +22,6 @@ Quem vai comigo? Marca aqui 👇
 
 ---
 Versão com fundo verde: `religar-feed-verde.png` e `religar-story-verde.png` (mesma legenda).
+
+---
+Versão padrão Igreja em Movimento (verde-musgo, letras douradas, fontes Giovanna + Nunito, logo IEM): `religar-iem-feed.png` e `religar-iem-story.png` (mesma legenda).
