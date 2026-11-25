@@ -1,0 +1,24 @@
+{
+  "layout": "quote",
+  "theme": "cobalt",
+  "tag": "Pílula de Liderança",
+  "num": "#13",
+  "title": "Avaliar com justiça<br><em>é olhar o ciclo inteiro.</em>",
+  "lead": "Toda avaliação de desempenho corre o risco de distorções. O líder que serve aprende a reconhecê-las.",
+  "items": [
+    {
+      "h": "Efeito halo",
+      "p": "Um traço marcante, bom ou ruim, contamina a avaliação inteira."
+    },
+    {
+      "h": "Recência",
+      "p": "Só os fatos das últimas semanas pesam na nota do semestre."
+    },
+    {
+      "h": "Tendência central",
+      "p": "Todos ficam na média para evitar conversas difíceis."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Gestão de Pessoas e Liderança",
+  "titleSize": 86
+}

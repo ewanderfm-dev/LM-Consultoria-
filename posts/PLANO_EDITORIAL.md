@@ -72,5 +72,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | 10 | 2026-11-22 | Carreira (FGV pl Unid. 9) | Competência é saber, fazer e querer: CHA | editorial/burgundy |
 | 11 | 2026-11-23 | Desenvolvimento (FGV pl Unid. 8) | Conhecimento compartilhado se multiplica: treinamento, educação continuada, gestão do conhecimento | band/ivory |
 | 12 | 2026-11-24 | ESG e pessoas (FGV pl Unid. 4) | O S do ESG começa dentro de casa: inclusão, bem-estar e propósito | cards/plum |
+| 13 | 2026-11-25 | Liderança (FGV pl Unid. 6) | Avaliar com justiça é olhar o ciclo inteiro: halo, recência e tendência central | quote/cobalt |
 
 Próximas sugestões do banco: Janela de Johari, campo de forças de Lewin, Canvas.
