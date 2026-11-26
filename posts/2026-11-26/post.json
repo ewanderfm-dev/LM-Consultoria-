@@ -1,0 +1,15 @@
+{
+  "layout": "photo",
+  "theme": "teal",
+  "tag": "Pílula de Pessoas",
+  "num": "#14",
+  "title": "Quem entende necessidades<br><em>engaja pessoas.</em>",
+  "titleSize": 80,
+  "lead": "A pirâmide de Maslow explica por que um mesmo incentivo move uma pessoa e não move outra.",
+  "items": [
+    { "h": "Garanta a base", "p": "Segurança, remuneração justa e condições dignas de trabalho." },
+    { "h": "Gere vínculo", "p": "Relações de confiança e reconhecimento genuíno." },
+    { "h": "Abra o topo", "p": "Desafios, crescimento e propósito para quem quer ir além." }
+  ],
+  "cta": "Fonte: apostila FGV – Comportamento do Consumidor"
+}

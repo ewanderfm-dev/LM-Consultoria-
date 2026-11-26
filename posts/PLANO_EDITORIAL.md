@@ -73,5 +73,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | 11 | 2026-11-23 | Desenvolvimento (FGV pl Unid. 8) | Conhecimento compartilhado se multiplica: treinamento, educação continuada, gestão do conhecimento | band/ivory |
 | 12 | 2026-11-24 | ESG e pessoas (FGV pl Unid. 4) | O S do ESG começa dentro de casa: inclusão, bem-estar e propósito | cards/plum |
 | 13 | 2026-11-25 | Liderança (FGV pl Unid. 6) | Avaliar com justiça é olhar o ciclo inteiro: halo, recência e tendência central | quote/cobalt |
+| 14 | 2026-11-26 | Pessoas (FGV cs p50–52) | Quem entende necessidades engaja pessoas: Maslow aplicado à equipe | photo/teal |
 
 Próximas sugestões do banco: Janela de Johari, campo de forças de Lewin, Canvas.
