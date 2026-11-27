@@ -74,5 +74,6 @@ Para gerar a arte: `node posts/render.js posts/AAAA-MM-DD/post.json`
 | 12 | 2026-11-24 | ESG e pessoas (FGV pl Unid. 4) | O S do ESG começa dentro de casa: inclusão, bem-estar e propósito | cards/plum |
 | 13 | 2026-11-25 | Liderança (FGV pl Unid. 6) | Avaliar com justiça é olhar o ciclo inteiro: halo, recência e tendência central | quote/cobalt |
 | 14 | 2026-11-26 | Pessoas (FGV cs p50–52) | Quem entende necessidades engaja pessoas: Maslow aplicado à equipe | photo/teal |
+| 15 | 2026-11-27 | Comunicação (FGV ec p12–16) | Comunicar é garantir que o outro entendeu: ruído, feedback e não verbal | classic/slate |
 
 Próximas sugestões do banco: Janela de Johari, campo de forças de Lewin, Canvas.

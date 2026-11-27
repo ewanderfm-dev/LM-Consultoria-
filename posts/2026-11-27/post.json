@@ -1,0 +1,24 @@
+{
+  "layout": "classic",
+  "theme": "slate",
+  "tag": "Pílula de Comunicação",
+  "num": "#15",
+  "title": "Comunicar é garantir<br><em>que o outro entendeu.</em>",
+  "lead": "A mensagem não termina quando o líder fala. Termina quando a equipe compreende e consegue agir.",
+  "items": [
+    {
+      "h": "Reduza o ruído",
+      "p": "Linguagem clara, canal certo e o momento adequado."
+    },
+    {
+      "h": "Confirme o entendimento",
+      "p": "Peça que o outro diga o que entendeu: o feedback fecha o ciclo."
+    },
+    {
+      "h": "Cuide do não verbal",
+      "p": "Tom de voz, postura e olhar falam junto com as palavras."
+    }
+  ],
+  "cta": "Fonte: apostila FGV – Comunicação",
+  "titleSize": 82
+}
